@@ -9,7 +9,7 @@ assignees: ethan-master-coding
 
 ## Description
 
-Denomination:  # for example: $1 or 5¢
-Name of denomination:  # for example dime
-Years of minting: # For example 1909-1958
-Mints: #Where the coin was minted.
+Denomination:  <!-- for example: $1 or 5¢ -->
+Name of denomination:  <!-- # for example dime -->
+Years of minting: <!-- # For example 1909-1958 -->
+Mints: <!-- # Where the coin was minted. -->
