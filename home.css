@@ -1,0 +1,13 @@
+* {
+  margin-left: 25vw;
+  margin-right: 25vw;
+}
+
+.home_coins {
+  display: grid;
+  grid-gap: 7.5px;
+}
+
+.home_penneys {
+  grid-area: 1 / 1;
+}
