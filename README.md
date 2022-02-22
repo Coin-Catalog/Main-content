@@ -10,4 +10,4 @@ In progress
 This project uses HTML, CSS and Github
 
 ## Collaborators
-I am the sole reviewer for the project but all of [these people](https://github.com/ethan-master-coding/Coin-catalog/graphs/contributors) contrubited to it.
+I am the sole maintainer for the project but all of [these people](https://github.com/ethan-master-coding/Coin-catalog/graphs/contributors) contrubited to it.
