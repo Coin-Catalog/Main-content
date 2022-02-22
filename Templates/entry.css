@@ -1,0 +1,12 @@
+.coin_profile {
+  display: grid;
+  grid-gap: 0em;
+}
+
+.main_profile {
+  grid-area: 1 / 1;
+}
+
+.secondary_part {
+  grid-area: 1 / 2;
+}
