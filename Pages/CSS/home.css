@@ -1,0 +1,29 @@
+* {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-align: center;
+}
+
+.home_coins {
+  display: grid;
+  grid-gap: 7.5px;
+}
+
+.home_penneys {
+  grid-area: 1 / 1;
+  max-width: 22.5%;
+  max-width: 22.5%;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.profile_img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+
+.section_link {
+  text-decoration: none;
+  color: black;
+}
