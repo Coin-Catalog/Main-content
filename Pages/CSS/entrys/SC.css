@@ -1,0 +1,16 @@
+.SC_list {
+    display: grid;
+}
+
+.not_lincoln {
+  grid-area: 1 / 1 / 1 / 1;
+}
+
+.lincoln {
+  grid-area: 1 / 2 / 1 / 2;
+}
+
+.penny_img {
+  max-width: 50px;
+  max-height: 50px;
+}
