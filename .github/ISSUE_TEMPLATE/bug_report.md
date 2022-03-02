@@ -39,3 +39,8 @@ If there are any workaround to avoid this bug
 
 **Additional context**
 Add any other context about the problem here.
+
+**Other**
+
+- [ ] Lables added
+- [ ] Issue assigned
