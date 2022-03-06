@@ -1,0 +1,23 @@
+* {
+  text-align: center;
+  justify-content: center;
+  margin: 0 .5vw;
+}
+
+.SC_list {
+  display: grid;
+  grid-gap: 5vw;
+}
+
+.nLincoln {
+  grid-column: 1;
+}
+
+.lincoln {
+  grid-column: 2;
+}
+
+.penny_img {
+  max-width: 100px;
+  max-height: 100px;
+}
