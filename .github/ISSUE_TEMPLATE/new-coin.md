@@ -3,7 +3,7 @@ name: New coin
 about: To request a new coin to be added the catalog
 title: 'New coin: <add coin name here>'
 labels: New coin
-assignees: ethan-master-coding
+assignees: Controbution team
 
 ---
 
