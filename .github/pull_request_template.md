@@ -2,5 +2,5 @@
 
 Coin added: 
 
-- [ ]  I have not plagerised anything in my edit/entry.
-- [ ] I have checked that my edit/entry has no spelling/gramemr mistakes.
+- [ ]  I have not plagiarised anything in my edit/entry.
+- [ ] I have checked that my edit/entry has no spelling/grammar mistakes.
