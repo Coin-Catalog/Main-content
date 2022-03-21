@@ -1,7 +1,11 @@
 * {
   text-align: center;
   justify-content: center;
-  margin: 0 .5vw;
+  margin: 0.5vw;
+}
+
+.line_height {
+  line-height: calc(1.2em + 5px);
 }
 
 .SC_list {
