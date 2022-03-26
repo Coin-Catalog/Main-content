@@ -1,4 +1,4 @@
-<!-- Dont forget to read the [Contobution guide](TBD). -->
+Dont forget to read the [Contobution guide](https://github.com/Coin-Catalog/Coin-catalog/blob/main/CONTRIBUTING.md).
 
 Coin added: 
 
