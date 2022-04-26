@@ -1,0 +1,18 @@
+name: Comment App Screenshot
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout your pull request code
+      - uses: actions/checkout@v2
+
+      # Run Screenshot Comment Action
+      - name: Run Screenshot Comment Action
+        uses: saadmk11/comment-webpage-screenshot@main
+        with:
+          upload_to: github_branch
