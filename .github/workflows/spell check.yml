@@ -1,0 +1,2 @@
+- name: Comment Webpage Screenshot
+  uses: saadmk11/comment-webpage-screenshot@v0.5
