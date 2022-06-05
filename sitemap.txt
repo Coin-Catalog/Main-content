@@ -1,5 +1,5 @@
-coincatalog.org
-coincatalog.org/home
+https://www.coincatalog.org
+https://www.coincatalog.org/home
 https://www.coincatalog.org/pennies/small-cents
 https://www.coincatalog.org/pennies/small-cents/flying-eagal
 https://www.coincatalog.org/pennies/small-cents/indian-head
