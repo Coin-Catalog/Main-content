@@ -1,0 +1,38 @@
+.related {
+  display: grid;
+  grid-gap: 5px;
+  gap: 5px;
+  --Related-size: calc(24% - 20px)
+  grid-template-columns: repeat(4, var(--Related-size));
+}
+
+.item {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.item_1 {
+  grid-area: 1 / 1;
+}
+
+.item_2 {
+  grid-area: 1 / 2;
+}
+
+.item_3 {
+  grid-area: 1 / 3;
+}
+
+.item_4 {
+  grid-area: 1 / 4;
+}
+
+.no_deceration {
+  text-decoration: none;
+  color: black;
+}
+
+.related-image {
+  align-items: center;
+  justify-content: center;
+}
