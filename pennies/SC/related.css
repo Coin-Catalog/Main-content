@@ -4,6 +4,7 @@
   gap: 5px;
   --Related-size: calc(24% - 20px)
   grid-template-columns: repeat(4, var(--Related-size));
+  width: 90%;
 }
 
 .item {
@@ -35,4 +36,8 @@
 .related-image {
   align-items: center;
   justify-content: center;
+}
+
+main, section {
+  display: contents;
 }
