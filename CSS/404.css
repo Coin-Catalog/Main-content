@@ -1,0 +1,10 @@
+* {
+  text-align: center;
+}
+
+.blame {
+  border: .25vh solid black;
+  border-radius: .25vh;
+  width: 25%;
+  margin: 2.5vw;
+}
