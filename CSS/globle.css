@@ -22,3 +22,13 @@
 .footer:hover:after {
   width: 100%;
 }
+
+nav > p {
+  text-align: left;  
+}
+
+nav > p > a {
+  text-decoration: underline;
+  color: black;
+  text-decoration-thickness: 1px;
+}
