@@ -1,0 +1,29 @@
+.coin_profile {
+  display: grid;
+  grid-gap: 10px;
+  padding: 7.5px;
+  grid-template-columns: 25% 75%;
+}
+
+.profile {
+  grid-area: 1 / 1;
+  border: 2.5px solid black;
+  display: grid;
+}
+
+.secondary_part {
+  grid-area: 1 / 2;
+  border: 2.5px solid black;
+}
+
+.obverse {
+  grid-area: 1 / 1;
+}
+
+.reverse {
+  grid-area: 1 / 2;
+}
+
+.no_margin {
+  margin: 0px;
+}
