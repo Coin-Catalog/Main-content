@@ -1,9 +1,3 @@
-:root {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #a19fa1;
-  letter-spacing: normal;
-}
-
 .footer {
   display: inline-block;
   text-decoration: none;
@@ -21,14 +15,4 @@
 
 .footer:hover:after {
   width: 100%;
-}
-
-nav > p {
-  text-align: left;  
-}
-
-nav > p > a {
-  text-decoration: underline;
-  color: black;
-  text-decoration-thickness: 1px;
 }

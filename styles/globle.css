@@ -1,0 +1,20 @@
+:root {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #a19fa1;
+  letter-spacing: normal;
+}
+
+* {
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  text-align: center;
+  justify-content: center;
+}
+
+hr {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+}
