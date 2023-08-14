@@ -7,7 +7,7 @@ reverse: 'some GH raw URL'
 full: 'some GH raw URL'
 datesMinted: '1959-2008'
 Mints: [Philadelphia, Denver, San Francisco]
-mintage: someNum
+mintage: 142,153,900,448
 Designer: 'Obverse Victor D. Brenner, Reverse: Frank Gasparro'
 related: [shieldPennies,pennies2009,wheatPennies,indianHead]
 ---
