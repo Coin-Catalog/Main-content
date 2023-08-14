@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 
 import Footer from '../lib/components/footer'
@@ -20,6 +19,13 @@ The form once I want to get it working
 export default function Custom404() {
   return (
     <>
+      <Head>
+        <title>404 Page not found</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/Coin-Catalog/Main-content/main/public/images/Favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/Coin-Catalog/Main-content/main/public/images/Favicon.png" />
+      </Head>
+      
       <h1>404 Page not found</h1>
       <p>Good job you wondered out of the inteded area! The page you are looking for does not exist.</p>
 

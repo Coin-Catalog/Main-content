@@ -18,6 +18,9 @@ export default function Home({allEntryData}: any) {
     <div>
       <Head>
         <title>Home</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/Coin-Catalog/Main-content/main/public/images/Favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/Coin-Catalog/Main-content/main/public/images/Favicon.png" />
       </Head>
 
       <header>
@@ -61,17 +64,3 @@ export async function getStaticProps() {
     }
   }
 }
-
-/*
-<div className={`${styles.home_penneys}`}>
-              <Link href="/pennies/small-cents" className={`${styles.section_link}`}>
-                <picture className={`${styles.profile_img}`}>
-                  <source src="./images/pennies/SC/PNGs/mainLincoln.png" className={`${styles.profile_img}`} />
-
-                  <img src="./images/pennies/SC/PNGs/mainLincoln.png" alt="Image of the reverse of a wheat and sheild penney as well as the obverse of a 2019 penney" className={`${styles.profile_img}`} />
-                </picture>
-
-                Small cents were first minted in 1856 and were first put into circulation a year later in 1857. They are still minted to this day.
-              </Link>
-            </div>
-*/

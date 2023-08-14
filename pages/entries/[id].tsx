@@ -31,6 +31,9 @@ export default function Coin({ entryData }: EntryDataInterface) {
     <>
       <Head>
         <title>{entryData.title} | US Coin Catalog</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/Coin-Catalog/Main-content/main/public/images/Favicon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/Coin-Catalog/Main-content/main/public/images/Favicon.png" />
       </Head>
 
       <nav className='no_deceration'>
