@@ -2,9 +2,9 @@
 title: '2009 pennies'
 codeTitle: "pennies2009"
 id: "5"
-obverse: 'some GH raw URL'
-reverse: 'some GH raw URL'
-full: 'some GH raw URL'
+obverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/pennies2009Obverse.png?raw=true
+reverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/pennies2009Reverse.png?raw=true
+full: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/pennies2009.png?raw=true
 datesMinted: '2009'
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 5,525,859,372

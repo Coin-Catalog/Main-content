@@ -2,9 +2,9 @@
 title: Flying Eagle cent
 codeTitle: flyingEagle
 id: "1"
-obverse: some GH raw URL
-reverse: some GH raw URL
-full: some GH raw URL
+obverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/flyingEagleObverse.png?raw=true
+reverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/flyingEagleReverse.png?raw=true
+full: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/flyingEagle.png?raw=true
 datesMinted: 1856-1858
 Mints: [Philadelphia]
 mintage: 42,052,000

@@ -2,9 +2,9 @@
 title: 'Shield cent'
 codeTitle: "shieldPennies"
 id: "6"
-obverse: 'some GH raw URL'
-reverse: 'some GH raw URL'
-full: 'some GH raw URL'
+obverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/shieldPenniesObverse.png?raw=true
+reverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/shieldPenniesReverse.png?raw=true
+full: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/shieldPennies.png?raw=true
 datesMinted: '2010-Present'
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 87,662,371,984+
