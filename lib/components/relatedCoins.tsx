@@ -26,32 +26,32 @@ export default function RelatedCoins({ relatedCoins }: RelatedCoinsProps) {
     "flyingEagle": {
       "name": "Flying Eagle",
       "years": "1856-1858",
-      "imageURL": "someGithubRawURL"
+      "imageURL": "https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/flyingEagle.png?raw=true"
     },
     "indianHead": {
       "name": "Indian Head",
       "years": "1859-1909",
-      "imageURL": "someGithubRawURL"
+      "imageURL": "https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/indianHead.png?raw=true"
     },
     "wheatPennies": {
       "name": "Wheat Pennies",
       "years": "1909-1958",
-      "imageURL": "someGithubRawURL"
+      "imageURL": "https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/wheatPennies.png?raw=true"
     },
     "memorialPennies": {
       "name": "Memorial Pennies",
       "years": "1959-2008",
-      "imageURL": "someGithubRawURL"
+      "imageURL": "https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/memorialPennies.png?raw=true"
     },
     "pennies2009": {
       "name": "2009 Pennies",
       "years": "2009",
-      "imageURL": "someGithubRawURL"
+      "imageURL": "https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/pennies2009.png?raw=true"
     },
     "shieldPennies": {
       "name": "Shield Pennies",
       "years": "2010-present",
-      "imageURL": "someGithubRawURL"
+      "imageURL": "https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/shieldPennies.png?raw=true"
     }
   }
 
