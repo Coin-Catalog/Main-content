@@ -11,6 +11,7 @@ export default function Home({allEntryData}: any) {
     "title": string,
     "codeTitle": string,
     "full": string;
+    "id": string;
   }
 
   return (
@@ -26,17 +27,19 @@ export default function Home({allEntryData}: any) {
 
       <main>
         <div className={`${styles.home_coins}`}>
-            {allEntryData.map(({ title, codeTitle, full }: Coin) => (
-            <Link key={title} className={`${styles.home_coin} no_deceration`} href={`/entries/${codeTitle}`}>
-              <picture className={`${styles.profile_img}`}>
-                <source src={`./images/${full}/PNGs/main.png`} className={`${styles.profile_img}`} />
-                
-                <img src={`./images/${full}/PNGs/main.png`} alt={`Image of the reverse of a ${title} as well as the obverse of a ${title}`} className={`${styles.profile_img}`} />
-              </picture>
+          {allEntryData.map(({ title, codeTitle, full, id }: Coin, index: number) => (
+            <>
+              <Link href={`/entries/${codeTitle}`} key={id} className={`${styles.home_coin} no_deceration`} style={{ gridColumn: `${(index % 3) + 1} / span 1`, gridRow: `${Math.floor(index / 3) + 1} / span 1` }} >
+                <picture className={`${styles.profile_img}`}>
+                  <source src={`./images/${full}/PNGs/main.png`} className={`${styles.profile_img}`} />
+                  
+                  <img src={`./images/${full}/PNGs/main.png`} alt={`Image of the reverse of a ${title} as well as the obverse of a ${title}`} className={`${styles.profile_img}`} />
+                </picture>
 
-              <p>{title}</p>
-            </Link>
-            ))}
+                <p>{title}</p>
+              </Link>
+            </>
+          ))}
 
         </div>
       </main>

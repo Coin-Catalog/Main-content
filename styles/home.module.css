@@ -1,6 +1,11 @@
 .home_coins {
-  display: flex;
-  grid-gap: 7.5px;
+  display: grid;
+  gap: 2.5%;
+}
+
+.home_coin {
+  max-width: 30vw;
+  margin-top: 1%;
 }
 
 .home_coin {
