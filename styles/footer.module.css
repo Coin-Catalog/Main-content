@@ -1,0 +1,18 @@
+.footer {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.footer:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: black;
+  transition: 300ms;
+}
+
+.footer:hover:after {
+  width: 100%;
+}

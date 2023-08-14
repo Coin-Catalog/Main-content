@@ -1,0 +1,25 @@
+.home_coins {
+  display: grid;
+  gap: 2.5%;
+}
+
+.home_coin {
+  max-width: 30vw;
+  margin-top: 1%;
+}
+
+.home_coin {
+  border: 1px solid black;
+  max-width: 30vw;
+}
+
+.profile_img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+
+.section_link {
+  text-decoration: none;
+  color: black;
+}
