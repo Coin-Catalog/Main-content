@@ -2,7 +2,7 @@
   display: grid;
   grid-gap: 5px;
   gap: 5px;
-  --Related-size: calc(24% - 20px)
+  --Related-size: calc(24% - 20px);
   grid-template-columns: repeat(4, var(--Related-size));
   width: 90%;
 }
