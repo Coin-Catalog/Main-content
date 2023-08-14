@@ -1,27 +1,8 @@
 import Link from 'next/link'
 import styles from '../../styles/relatedCoins.module.css'
 
-interface RelatedCoinsProps {
-  relatedCoins: string[]
-}
-
-export default function RelatedCoins({ relatedCoins }: RelatedCoinsProps) {
-  interface CoinDataItem {
-    name: string
-    years: string
-    imageURL: string
-  }
-
-  interface CoinData {
-    flyingEagle: CoinDataItem
-    indianHead: CoinDataItem
-    wheatPennies: CoinDataItem
-    memorialPennies: CoinDataItem
-    pennies2009: CoinDataItem
-    shieldPennies: CoinDataItem
-  }
-
-  const coinData: CoinData = 
+export default function RelatedCoins({ relatedCoins }: any) {
+  const coinData: any = 
   {
     "flyingEagle": {
       "name": "Flying Eagle",
