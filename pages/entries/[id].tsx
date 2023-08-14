@@ -54,6 +54,8 @@ export default function Coin({ entryData }: EntryDataInterface) {
           Mints: {entryData.Mints.join(", ")}
           <br />
           total minted: {entryData.mintage}
+          <br />
+          Designer: {entryData.Designer}
         </p>
         </div>
 
