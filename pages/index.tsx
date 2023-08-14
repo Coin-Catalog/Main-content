@@ -34,9 +34,9 @@ export default function Home({allEntryData}: any) {
             <>
               <Link href={`/entries/${codeTitle}`} key={id} className={`${styles.home_coin} no_deceration`} style={{ gridColumn: `${(index % 3) + 1} / span 1`, gridRow: `${Math.floor(index / 3) + 1} / span 1` }} >
                 <picture className={`${styles.profile_img}`}>
-                  <source src={`./images/${full}/PNGs/main.png`} className={`${styles.profile_img}`} />
+                  <source src={full} className={`${styles.profile_img}`} />
                   
-                  <img src={`./images/${full}/PNGs/main.png`} alt={`Image of the reverse of a ${title} as well as the obverse of a ${title}`} className={`${styles.profile_img}`} />
+                  <img src={full} alt={`Image of the reverse of a ${title} as well as the obverse of a ${title}`} className={`${styles.profile_img}`} />
                 </picture>
 
                 <p>{title}</p>
