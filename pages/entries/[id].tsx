@@ -44,11 +44,17 @@ export default function Coin({ entryData }: EntryDataInterface) {
 
       <div className={styles.coin_profile}>
         <div className={styles.profile}>
-        <picture>
-          <source src={entryData.obverse} />
+
+        <picture className={styles.image}>
+          <source src={entryData.obverse} className={styles.image} />
+
+          <img src={entryData.obverse} className={styles.image} alt={`Obverse of a ${entryData.title}`} />
         </picture>
-        <picture>
-          <source src={entryData.reverse} />
+
+        <picture className={styles.image}>
+          <source src={entryData.reverse} className={styles.image} />
+
+          <img src={entryData.reverse} className={styles.image} alt={`Reverse of a ${entryData.title}`} />
         </picture>
   
         <p>
