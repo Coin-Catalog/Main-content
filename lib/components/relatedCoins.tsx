@@ -40,10 +40,10 @@ export default function RelatedCoins({ relatedCoins }: any) {
     <section className={styles.related}>
       <section className={`${styles.item_1} ${styles.item}`}>
         <Link href={`/entries/${relatedCoins[0]}`} target="_blank" className="no_deceration">
-          <picture className={styles.penny_img}>
-            <source src={coinData[relatedCoins[0]]["imageURL"]} className={styles.penny_img} />
+          <picture className={`${styles.image}`}>
+            <source src={coinData[relatedCoins[0]]["imageURL"]} className={`${styles.image}`} />
       
-            <img src={coinData[relatedCoins[0]]["imageURL"]} alt={`Image of the ${relatedCoins[0]}`} className={styles.penny_img} />
+            <img src={coinData[relatedCoins[0]]["imageURL"]} alt={`Image of the ${relatedCoins[0]}`} className={`${styles.image}`} />
           </picture>
     
           <p>{`${relatedCoins[0]} (${coinData[relatedCoins[0]]["years"]})`}</p>
@@ -52,10 +52,10 @@ export default function RelatedCoins({ relatedCoins }: any) {
 
       <section className={`${styles.item_2} ${styles.item}`}>
         <Link href={`/entries/${relatedCoins[1]}`} target="_blank" className="no_deceration">
-          <picture className={styles.penny_img}>
-            <source src={coinData[relatedCoins[1]]["imageURL"]} className={styles.penny_img} />
+          <picture className={`${styles.image}`}>
+            <source src={coinData[relatedCoins[1]]["imageURL"]} className={`${styles.image}`} />
       
-            <img src={coinData[relatedCoins[1]]["imageURL"]} alt={`Image of the ${relatedCoins[1]}`} className={styles.penny_img} />
+            <img src={coinData[relatedCoins[1]]["imageURL"]} alt={`Image of the ${relatedCoins[1]}`} className={`${styles.image}`} />
           </picture>
     
           <p>{`${relatedCoins[1]} (${coinData[relatedCoins[1]]["years"]})`}</p>
@@ -64,10 +64,10 @@ export default function RelatedCoins({ relatedCoins }: any) {
 
       <section className={`${styles.item_3} ${styles.item}`}>
         <Link href={`/entries/${relatedCoins[2]}`} target="_blank" className="no_deceration">
-          <picture className={styles.penny_img}>
-            <source src={coinData[relatedCoins[2]]["imageURL"]} className={styles.penny_img} />
+          <picture className={`${styles.image}`}>
+            <source src={coinData[relatedCoins[2]]["imageURL"]} className={`${styles.image}`} />
       
-            <img src={coinData[relatedCoins[2]]["imageURL"]} alt={`Image of the ${relatedCoins[2]}`} className={styles.penny_img} />
+            <img src={coinData[relatedCoins[2]]["imageURL"]} alt={`Image of the ${relatedCoins[2]}`} className={`${styles.image}`} />
           </picture>
     
           <p>{`${relatedCoins[2]} (${coinData[relatedCoins[2]]["years"]})`}</p>
@@ -76,10 +76,10 @@ export default function RelatedCoins({ relatedCoins }: any) {
 
       <section className={`${styles.item_4} ${styles.item}`}>
         <Link href={`/entries/${relatedCoins[3]}`} target="_blank" className="no_deceration">
-          <picture className={styles.penny_img}>
-            <source src={coinData[relatedCoins[3]]["imageURL"]} className={styles.penny_img} />
+          <picture className={`${styles.image}`}>
+            <source src={coinData[relatedCoins[3]]["imageURL"]} className={`${styles.image}`} />
       
-            <img src={coinData[relatedCoins[3]]["imageURL"]} alt={`Image of the ${relatedCoins[3]}`} className={styles.penny_img} />
+            <img src={coinData[relatedCoins[3]]["imageURL"]} alt={`Image of the ${relatedCoins[3]}`} className={`${styles.image}`} />
           </picture>
     
           <p>{`${relatedCoins[3]} (${coinData[relatedCoins[3]]["years"]})`}</p>
