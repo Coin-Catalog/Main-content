@@ -34,6 +34,8 @@ export default function Coin({ entryData }: EntryDataInterface) {
 
         <link rel="apple-touch-icon" sizes="180x180" href="https://raw.githubusercontent.com/Coin-Catalog/Main-content/main/public/images/Favicon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/Coin-Catalog/Main-content/main/public/images/Favicon.png" />
+
+        <link rel="canonical" href={`https://coin-catalog.vercel.app/entries/${router.query.id}`} />
       </Head>
 
       <nav className='no_deceration'>
