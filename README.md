@@ -1,11 +1,7 @@
 # Coin-catalog
 
-
 ## Description
 This site will have a list of US coins and their details.
-
-## How to use the site
-In progress
 
 ## Technologies 
 This project uses HTML, CSS, JS and Github
