@@ -43,8 +43,8 @@ export default async function Page() {
   }
 
   const entryJSX = entries.map(({ title, codeTitle, full, id }: Coin, index: number) => (
-    <>
-      <Link href={`/entries/${codeTitle}`} key={id} className={`${styles.home_coin} no_deceration`} style={{ gridColumn: `${(index % 3) + 1} / span 1`, gridRow: `${Math.floor(index / 3) + 1} / span 1` }} >
+    <span key={id} className={`${styles.home_coin} ${Number(id) % 3 == 0 ? 'column-1': Number(id) % 2 ? "column-2" : "column3"}`}>
+      <Link href={`/entries/${codeTitle}`} className={`${styles.home_coin} no_deceration`} style={{ gridColumn: `${(index % 3) + 1} / span 1`, gridRow: `${Math.floor(index / 3) + 1} / span 1` }} >
         <picture className={`${styles.profile_img}`}>
           <source src={full} className={`${styles.profile_img}`} />
           
@@ -53,7 +53,7 @@ export default async function Page() {
 
         <p>{title}</p>
       </Link>
-    </>
+    </span>
   ))
 
   return (
@@ -70,7 +70,7 @@ export default async function Page() {
           <p>Coin catalog is filled with details about coins from America. Use the links below to navitagte to the coins you want to view.</p>
       </header>
       
-      <div key={Date.now()} className={`${styles.home_coins}`}>
+      <div className={`${styles.home_coins}`}>
         {entryJSX}
       </div>
 
