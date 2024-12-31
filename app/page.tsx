@@ -1,15 +1,40 @@
-'use client'
-
 import Head from 'next/head'
 import Link from 'next/link'
-
-import { useEffect, useState } from 'react';
+import { headers } from 'next/headers';
 
 //import Footer from '../components/footer.jsx'
 
 import styles from './styles/home.module.css'
 
-export default function Page() {
+export default async function Page() {
+  const headerList = headers();
+  const domainName = (await headerList).get("host");
+  let entries;
+
+  try {
+    const response = await fetch(`https://${domainName}/api/entries`, {
+      method: "GET"
+    })
+    
+    if (response.status > 300 || response.status < 200) {
+      // toast error
+    }
+    
+    const json = await response.json();
+    entries = JSON.parse(json)['entries'];
+  } catch (e) {
+    const response = await fetch(`http://${domainName}/api/entries`, {
+      method: "GET"
+    })
+    
+    if (response.status > 300 || response.status < 200) {
+      // toast error
+    }
+    
+    const json = await response.json();
+    entries = JSON.parse(json)['entries'];
+  }
+
   interface Coin {
     "title": string,
     "codeTitle": string,
@@ -17,37 +42,19 @@ export default function Page() {
     "id": string;
   }
 
-  let [entryData, setEntryData] = useState(<p>Loading...</p>);
+  const entryJSX = entries.map(({ title, codeTitle, full, id }: Coin, index: number) => (
+    <>
+      <Link href={`/entries/${codeTitle}`} key={id} className={`${styles.home_coin} no_deceration`} style={{ gridColumn: `${(index % 3) + 1} / span 1`, gridRow: `${Math.floor(index / 3) + 1} / span 1` }} >
+        <picture className={`${styles.profile_img}`}>
+          <source src={full} className={`${styles.profile_img}`} />
+          
+          <img src={full} alt={`Image of the reverse of a ${title} as well as the obverse of a ${title}`} className={`${styles.profile_img}`} />
+        </picture>
 
-  useEffect(() => {
-    fetch("/api/entries", {
-      method: "GET"
-    })
-    .then(response => {
-      if (response.status > 300 || response.status < 200) {
-        // toast error
-      }
-      return response;
-    })
-    .then(data => data.json())
-    .then(json => {
-      const entries = JSON.parse(json)['entries'];
-  
-      setEntryData(entries.map(({ title, codeTitle, full, id }: Coin, index: number) => (
-        <>
-          <Link href={`/entries/${codeTitle}`} key={id} className={`${styles.home_coin} no_deceration`} style={{ gridColumn: `${(index % 3) + 1} / span 1`, gridRow: `${Math.floor(index / 3) + 1} / span 1` }} >
-            <picture className={`${styles.profile_img}`}>
-              <source src={full} className={`${styles.profile_img}`} />
-              
-              <img src={full} alt={`Image of the reverse of a ${title} as well as the obverse of a ${title}`} className={`${styles.profile_img}`} />
-            </picture>
-  
-            <p>{title}</p>
-          </Link>
-        </>
-      )))
-    })
-  }, []);
+        <p>{title}</p>
+      </Link>
+    </>
+  ))
 
   return (
     <div>
@@ -64,7 +71,7 @@ export default function Page() {
       </header>
       
       <div key={Date.now()} className={`${styles.home_coins}`}>
-        {entryData}
+        {entryJSX}
       </div>
 
       <br />
