@@ -2,9 +2,9 @@
 title: 'Memorial cent'
 codeTitle: "memorialPennies"
 id: "4"
-obverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/memorialPenniesObverse.png?raw=true
-reverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/memorialPenniesReverse.png?raw=true
-full: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/memorialPennies.png?raw=true
+obverse: /coin/pennies/SC/PNGs/memorialPenniesObverse.png
+reverse: /coin/pennies/SC/PNGs/memorialPenniesReverse.png
+full: /coin/pennies/SC/PNGs/memorialPennies.png
 datesMinted: '1959-2008'
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 142,153,900,448

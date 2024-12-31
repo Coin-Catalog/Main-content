@@ -2,9 +2,9 @@
 title: 'Shield cent'
 codeTitle: "shieldPennies"
 id: "6"
-obverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/shieldPenniesObverse.png?raw=true
-reverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/shieldPenniesReverse.png?raw=true
-full: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/shieldPennies.png?raw=true
+obverse: /coin/pennies/SC/PNGs/shieldPenniesObverse.png
+reverse: /coin/pennies/SC/PNGs/shieldPenniesReverse.png
+full: /coin/pennies/SC/PNGs/shieldPennies.png
 datesMinted: '2010-Present'
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 87,662,371,984+

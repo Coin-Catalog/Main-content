@@ -2,9 +2,9 @@
 title: 'Indian Head cent'
 codeTitle: "indianHead"
 id: "2"
-obverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/indianHeadObverse.png?raw=true
-reverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/indianHeadReverse.png?raw=true
-full: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/indianHead.png?raw=true
+obverse: /coin/pennies/SC/PNGs/indianHeadObverse.png
+reverse: /coin/pennies/SC/PNGs/indianHeadReverse.png
+full: /coin/pennies/SC/PNGs/indianHead.png
 datesMinted: '1859-1909'
 Mints: [Philadelphia, San Francisco]
 mintage: 1,906,352,400

@@ -2,9 +2,9 @@
 title: '2009 pennies'
 codeTitle: "pennies2009"
 id: "5"
-obverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/pennies2009Obverse.png?raw=true
-reverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/pennies2009Reverse.png?raw=true
-full: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/pennies2009.png?raw=true
+obverse: /coin/pennies/SC/PNGs/pennies2009Obverse.png
+reverse: /coin/pennies/SC/PNGs/pennies2009Reverse.png
+full: /coin/pennies/SC/PNGs/pennies2009.png
 datesMinted: '2009'
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 5,525,859,372

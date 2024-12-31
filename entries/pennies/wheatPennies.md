@@ -2,9 +2,9 @@
 title: 'Wheat cent'
 codeTitle: "wheatPennies"
 id: "3"
-obverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/wheatPenniesObverse.png?raw=true
-reverse: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/wheatPenniesReverse.png?raw=true
-full: https://github.com/Coin-Catalog/Main-content/blob/main/public/images/pennies/SC/PNGs/wheatPennies.png?raw=true
+obverse: /coin/pennies/SC/PNGs/wheatPenniesObverse.png
+reverse: /coin/pennies/SC/PNGs/wheatPenniesReverse.png
+full: /coin/pennies/SC/PNGs/wheatPennies.png
 datesMinted: '1909-1958'
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 27,339,255,007

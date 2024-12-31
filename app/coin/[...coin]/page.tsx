@@ -49,7 +49,7 @@ export default async function Page({
         protocal = 'http://'
 
         entryData = JSON.parse(json)["data"];
-    }    
+    }
 
     return (
         <>
