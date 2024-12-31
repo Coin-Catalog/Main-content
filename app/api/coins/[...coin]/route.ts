@@ -1,9 +1,9 @@
-import fs, { stat } from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import { remark } from 'remark';
-import html from 'remark-html';
-import { NextRequest, NextResponse } from 'next/server';
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+import { remark } from "remark";
+import html from "remark-html";
+import { NextRequest, NextResponse } from "next/server";
 
 function getAllEntryIds(cat: string) {
   const postsDirectory = path.join(process.cwd(), `entries/${cat}`);
@@ -13,7 +13,7 @@ function getAllEntryIds(cat: string) {
   return fileNames.map((fileName) => {
     return {
       params: {
-        id: fileName.replace(/\.md$/, ''),
+        id: fileName.replace(/\.md$/, ""),
       },
     };
   });
@@ -22,7 +22,7 @@ function getAllEntryIds(cat: string) {
 async function getEntryData(id: string, cat: string) {
   const postsDirectory = path.join(process.cwd(), `entries/${cat}`);
   const fullPath = path.join(postsDirectory, `${id}.md`);
-  const fileContents = fs.readFileSync(fullPath, 'utf8');
+  const fileContents = fs.readFileSync(fullPath, "utf8");
 
   // Use gray-matter to parse the post metadata section
   const matterResult = matter(fileContents);
@@ -41,8 +41,8 @@ async function getEntryData(id: string, cat: string) {
   };
 }
 
-export async function GET (req: NextRequest)  {
-  const url: URL = new URL(req.url)
+export async function GET(req: NextRequest) {
+  const url: URL = new URL(req.url);
   const catagory = url.pathname.slice(11).split("/")[0];
   const coin = url.pathname.slice(11).split("/")[1];
 
@@ -50,8 +50,8 @@ export async function GET (req: NextRequest)  {
 
   return NextResponse.json(
     JSON.stringify({
-      'data': coinData
+      data: coinData,
     }),
-    {status: 200}
-  )
+    { status: 200 },
+  );
 }
