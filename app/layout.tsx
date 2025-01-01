@@ -22,11 +22,11 @@ export default function RootLayout({
       <head />
       <body>
         <Providers themeProps={{ attribute: "class" }}>
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-              {children}
-            </main>
+          <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+            {children}
+          </main>
 
-            <Footer />
+          <Footer />
         </Providers>
       </body>
     </html>
