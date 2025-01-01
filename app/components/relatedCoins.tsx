@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { headers } from 'next/headers';
 
-import { Card, CardHeader, CardBody } from '@nextui-org/card';
+import { Card, CardHeader } from '@nextui-org/card';
 import { Image } from '@nextui-org/image';
 
 import styles from '../styles/relatedCoins.module.css';
@@ -62,6 +62,7 @@ export default async function RelatedCoins({ relatedCoins }: any) {
     `${protocal}${domainName}/api/coins/${relatedCoins[1][0]}/${relatedCoins[1][1]}`,
   );
   const secondJson = JSON.parse(await second.json());
+
   coinData.two.imageURL = secondJson['data']['full'];
   coinData.two.years = secondJson['data']['datesMinted'];
   coinData.two.name = secondJson['data']['title'];
@@ -70,6 +71,7 @@ export default async function RelatedCoins({ relatedCoins }: any) {
     `${protocal}${domainName}/api/coins/${relatedCoins[2][0]}/${relatedCoins[2][1]}`,
   );
   const threeJson = JSON.parse(await three.json());
+
   coinData.three.imageURL = threeJson['data']['full'];
   coinData.three.years = threeJson['data']['datesMinted'];
   coinData.three.name = threeJson['data']['title'];
@@ -78,6 +80,7 @@ export default async function RelatedCoins({ relatedCoins }: any) {
     `${protocal}${domainName}/api/coins/${relatedCoins[3][0]}/${relatedCoins[3][1]}`,
   );
   const fourJson = JSON.parse(await four.json());
+
   coinData.four.imageURL = fourJson['data']['full'];
   coinData.four.years = fourJson['data']['datesMinted'];
   coinData.four.name = fourJson['data']['title'];
@@ -85,11 +88,11 @@ export default async function RelatedCoins({ relatedCoins }: any) {
   return (
     <section className={styles.related}>
       <Card className={`${styles.item_1} ${styles.item}`}>
-        <Link href={`/coin/${relatedCoins[0][0]}/${relatedCoins[0][1]}`} className="no_deceration">
+        <Link className="no_deceration" href={`/coin/${relatedCoins[0][0]}/${relatedCoins[0][1]}`}>
           <Image
+            alt={`Image of the ${relatedCoins[0]}`}
             className={`${styles.image}`}
             src={coinData['one']['imageURL']}
-            alt={`Image of the ${relatedCoins[0]}`}
           />
 
           <CardHeader>
@@ -99,11 +102,11 @@ export default async function RelatedCoins({ relatedCoins }: any) {
       </Card>
 
       <Card className={`${styles.item_2} ${styles.item}`}>
-        <Link href={`/coin/${relatedCoins[1][0]}/${relatedCoins[1][1]}`} className="no_deceration">
+        <Link className="no_deceration" href={`/coin/${relatedCoins[1][0]}/${relatedCoins[1][1]}`}>
           <Image
+            alt={`Image of the ${relatedCoins[1]}`}
             className={`${styles.image}`}
             src={coinData['two']['imageURL']}
-            alt={`Image of the ${relatedCoins[1]}`}
           />
 
           <CardHeader>
@@ -113,11 +116,11 @@ export default async function RelatedCoins({ relatedCoins }: any) {
       </Card>
 
       <Card className={`${styles.item_3} ${styles.item}`}>
-        <Link href={`/coin/${relatedCoins[2][0]}/${relatedCoins[2][1]}`} className="no_deceration">
+        <Link className="no_deceration" href={`/coin/${relatedCoins[2][0]}/${relatedCoins[2][1]}`}>
           <Image
+            alt={`Image of the ${relatedCoins[2]}`}
             className={`${styles.image}`}
             src={coinData['three']['imageURL']}
-            alt={`Image of the ${relatedCoins[2]}`}
           />
 
           <CardHeader>
@@ -127,11 +130,11 @@ export default async function RelatedCoins({ relatedCoins }: any) {
       </Card>
 
       <Card className={`${styles.item_4} ${styles.item}`}>
-        <Link href={`/coin/${relatedCoins[3][0]}/${relatedCoins[3][1]}`} className="no_deceration">
+        <Link className="no_deceration" href={`/coin/${relatedCoins[3][0]}/${relatedCoins[3][1]}`}>
           <Image
+            alt={`Image of the ${relatedCoins[3]}`}
             className={`${styles.image}`}
             src={coinData['four']['imageURL']}
-            alt={`Image of the ${relatedCoins[3]}`}
           />
 
           <CardHeader>
