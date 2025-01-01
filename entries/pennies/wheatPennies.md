@@ -1,7 +1,7 @@
 ---
 title: 'Wheat cent'
-codeTitle: "wheatPennies"
-id: "3"
+codeTitle: 'wheatPennies'
+id: '3'
 obverse: /coin/pennies/SC/PNGs/wheatPenniesObverse.png
 reverse: /coin/pennies/SC/PNGs/wheatPenniesReverse.png
 full: /coin/pennies/SC/PNGs/wheatPennies.png
@@ -9,7 +9,13 @@ datesMinted: '1909-1958'
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 27,339,255,007
 Designer: 'Victor David Brenner'
-related: [[pennies,shieldPennies],[pennies,memorialPennies],[pennies,pennies2009],[pennies,indianHead]]
+related:
+  [
+    [pennies, shieldPennies],
+    [pennies, memorialPennies],
+    [pennies, pennies2009],
+    [pennies, indianHead],
+  ]
 cat: pennies
 ---
 

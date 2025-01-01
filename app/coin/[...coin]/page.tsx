@@ -1,13 +1,13 @@
-import Head from "next/head";
-import Link from "next/link";
-import { headers } from "next/headers";
+import Head from 'next/head';
+import Link from 'next/link';
+import { headers } from 'next/headers';
 
-import { Card, CardHeader, CardBody } from "@nextui-org/card";
-import { Image } from "@nextui-org/image";
+import { Card, CardHeader, CardBody } from '@nextui-org/card';
+import { Image } from '@nextui-org/image';
 
-import RelatedCoins from "@/app/components/relatedCoins";
+import RelatedCoins from '@/app/components/relatedCoins';
 
-import styles from "./styles/entry.module.css";
+import styles from './styles/entry.module.css';
 
 interface EntryDataInterface {
   Designer: string;
@@ -25,37 +25,29 @@ interface EntryDataInterface {
   entryData: any;
 }
 
-export default async function Page({
-  params,
-}: {
-  params: Promise<{ coin: string }>;
-}) {
+export default async function Page({ params }: { params: Promise<{ coin: string }> }) {
   const headerList = headers();
-  const domainName = (await headerList).get("host");
+  const domainName = (await headerList).get('host');
   const catagory = (await params).coin[0];
   const coin = (await params).coin[1];
-  let protocal = "";
+  let protocal = '';
 
   let entryData: EntryDataInterface;
 
   try {
-    const response = await fetch(
-      `https://${domainName}/api/coins/${catagory}/${coin}`,
-    );
+    const response = await fetch(`https://${domainName}/api/coins/${catagory}/${coin}`);
     const json: any = await response.json();
 
-    protocal = "https://";
+    protocal = 'https://';
 
-    entryData = json["data"];
+    entryData = json['data'];
   } catch (e) {
-    const response = await fetch(
-      `http://${domainName}/api/coins/${catagory}/${coin}`,
-    );
+    const response = await fetch(`http://${domainName}/api/coins/${catagory}/${coin}`);
     const json: any = await response.json();
 
-    protocal = "http://";
+    protocal = 'http://';
 
-    entryData = JSON.parse(json)["data"];
+    entryData = JSON.parse(json)['data'];
   }
 
   return (
@@ -75,22 +67,16 @@ export default async function Page({
           type="image/png"
         />
 
-        <link
-          href={`${protocal}${domainName}/coin/${catagory}/${coin}`}
-          rel="canonical"
-        />
+        <link href={`${protocal}${domainName}/coin/${catagory}/${coin}`} rel="canonical" />
       </Head>
 
       <nav className="no_deceration">
         <p className="no_deceration noPadding">
           <Link className="no_deceration noPadding" href="/">
             Home
-          </Link>{" "}
+          </Link>{' '}
           /&nbsp;
-          <Link
-            className="no_deceration noPadding"
-            href={`/coin/${catagory}/${coin}`}
-          >
+          <Link className="no_deceration noPadding" href={`/coin/${catagory}/${coin}`}>
             {coin}
           </Link>
         </p>
@@ -112,7 +98,7 @@ export default async function Page({
             <p>
               Dates minted: {entryData.datesMinted}
               <br />
-              Mints: {entryData.Mints.join(", ")}
+              Mints: {entryData.Mints.join(', ')}
               <br />
               Total minted: {entryData.mintage}
               <br />
@@ -130,7 +116,7 @@ export default async function Page({
 
       <br />
 
-      <RelatedCoins relatedCoins={entryData["related"]} />
+      <RelatedCoins relatedCoins={entryData['related']} />
     </div>
   );
 }

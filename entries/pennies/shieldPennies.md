@@ -1,7 +1,7 @@
 ---
 title: 'Shield cent'
-codeTitle: "shieldPennies"
-id: "6"
+codeTitle: 'shieldPennies'
+id: '6'
 obverse: /coin/pennies/SC/PNGs/shieldPenniesObverse.png
 reverse: /coin/pennies/SC/PNGs/shieldPenniesReverse.png
 full: /coin/pennies/SC/PNGs/shieldPennies.png
@@ -9,7 +9,13 @@ datesMinted: '2010-Present'
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 87,662,371,984+
 Designer: 'Obverse Victor D. Brenner, reverse: Lyndall Bass'
-related: [[pennies,pennies2009],[pennies,memorialPennies],[pennies,wheatPennies],[pennies,indianHead]]
+related:
+  [
+    [pennies, pennies2009],
+    [pennies, memorialPennies],
+    [pennies, wheatPennies],
+    [pennies, indianHead],
+  ]
 cat: pennies
 ---
 

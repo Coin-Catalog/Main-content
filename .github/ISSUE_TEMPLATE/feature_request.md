@@ -4,7 +4,6 @@ about: Suggest an idea for this project
 title: ''
 labels: Feature
 assignees: ethan-master-coding
-
 ---
 
 **Is your feature request related to a problem? Please describe.**

@@ -1,7 +1,7 @@
 ---
 title: Flying Eagle cent
 codeTitle: flyingEagle
-id: "1"
+id: '1'
 obverse: /coin/pennies/SC/PNGs/flyingEagleObverse.png
 reverse: /coin/pennies/SC/PNGs/flyingEagleReverse.png
 full: /coin/pennies/SC/PNGs/flyingEagle.png
@@ -9,7 +9,13 @@ datesMinted: 1856-1858
 Mints: [Philadelphia]
 mintage: 42,052,000
 Designer: James B. Longacre
-related: [[pennies,shieldPennies],[pennies,memorialPennies],[pennies,wheatPennies],[pennies,indianHead]]
+related:
+  [
+    [pennies, shieldPennies],
+    [pennies, memorialPennies],
+    [pennies, wheatPennies],
+    [pennies, indianHead],
+  ]
 cat: pennies
 ---
 

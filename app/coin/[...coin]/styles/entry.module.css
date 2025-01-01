@@ -4,17 +4,17 @@
 
 .coin_profile {
   width: 100%;
-  
+
   display: grid;
   grid-template-columns: 30% 70%;
   grid-gap: 10px;
 }
-  
+
 .profile {
   grid-area: 1 / 1;
   padding: 7.5px;
 }
-  
+
 .secondary_part {
   grid-area: 1 / 2;
   padding: 7.5px;

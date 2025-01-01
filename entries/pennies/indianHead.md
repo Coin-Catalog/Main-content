@@ -1,7 +1,7 @@
 ---
 title: 'Indian Head cent'
-codeTitle: "indianHead"
-id: "2"
+codeTitle: 'indianHead'
+id: '2'
 obverse: /coin/pennies/SC/PNGs/indianHeadObverse.png
 reverse: /coin/pennies/SC/PNGs/indianHeadReverse.png
 full: /coin/pennies/SC/PNGs/indianHead.png
@@ -9,7 +9,13 @@ datesMinted: '1859-1909'
 Mints: [Philadelphia, San Francisco]
 mintage: 1,906,352,400
 Designer: 'James B. Longacre'
-related: [[pennies,shieldPennies],[pennies,memorialPennies],[pennies,wheatPennies],[pennies,flyingEagle]]
+related:
+  [
+    [pennies, shieldPennies],
+    [pennies, memorialPennies],
+    [pennies, wheatPennies],
+    [pennies, flyingEagle],
+  ]
 cat: pennies
 ---
 

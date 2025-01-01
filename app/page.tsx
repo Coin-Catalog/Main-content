@@ -1,20 +1,20 @@
-import Head from "next/head";
-import Link from "next/link";
-import { headers } from "next/headers";
+import Head from 'next/head';
+import Link from 'next/link';
+import { headers } from 'next/headers';
 
-import { Card, CardHeader, CardBody } from "@nextui-org/card";
-import { Image } from "@nextui-org/image";
+import { Card, CardHeader, CardBody } from '@nextui-org/card';
+import { Image } from '@nextui-org/image';
 
-import styles from "./styles/home.module.css";
+import styles from './styles/home.module.css';
 
 export default async function Page() {
   const headerList = headers();
-  const domainName = (await headerList).get("host");
+  const domainName = (await headerList).get('host');
   let entries;
 
   try {
     const response = await fetch(`https://${domainName}/api/entries`, {
-      method: "GET",
+      method: 'GET',
     });
 
     if (response.status > 300 || response.status < 200) {
@@ -23,10 +23,10 @@ export default async function Page() {
 
     const json = await response.json();
 
-    entries = JSON.parse(json)["entries"];
+    entries = JSON.parse(json)['entries'];
   } catch (e) {
     const response = await fetch(`http://${domainName}/api/entries`, {
-      method: "GET",
+      method: 'GET',
     });
 
     if (response.status > 300 || response.status < 200) {
@@ -35,7 +35,7 @@ export default async function Page() {
 
     const json = await response.json();
 
-    entries = JSON.parse(json)["entries"];
+    entries = JSON.parse(json)['entries'];
   }
 
   interface Coin {
@@ -46,34 +46,31 @@ export default async function Page() {
     cat: string;
   }
 
-  const entryJSX = entries.map(
-    ({ title, codeTitle, full, id, cat }: Coin, index: number) => (
-      <Card
-        key={id}
-        className={`${styles.home_coin} ${Number(id) % 3 == 0 ? "column-1" : Number(id) % 2 ? "column-2" : "column3"}`}
+  const entryJSX = entries.map(({ title, codeTitle, full, id, cat }: Coin, index: number) => (
+    <Card
+      key={id}
+      className={`${styles.home_coin} ${Number(id) % 3 == 0 ? 'column-1' : Number(id) % 2 ? 'column-2' : 'column3'}`}
+    >
+      <Link
+        className={`${styles.home_coin} no_deceration`}
+        href={`/coin/${cat}/${codeTitle}`}
+        style={{
+          gridColumn: `${(index % 3) + 1} / span 1`,
+          gridRow: `${Math.floor(index / 3) + 1} / span 1`,
+        }}
       >
-        <Link
-          className={`${styles.home_coin} no_deceration`}
-          href={`/coin/${cat}/${codeTitle}`}
-          style={{
-            gridColumn: `${(index % 3) + 1} / span 1`,
-            gridRow: `${Math.floor(index / 3) + 1} / span 1`,
-          }}
-        >
+        <CardBody>
+          <Image
+            alt={`Image of the reverse of a ${title} as well as the obverse of a ${title}`}
+            className={`${styles.profile_img}`}
+            src={full}
+          />
+        </CardBody>
 
-          <CardBody>
-            <Image 
-              alt={`Image of the reverse of a ${title} as well as the obverse of a ${title}`}
-              className={`${styles.profile_img}`}
-              src={full}
-            />
-          </CardBody>
-
-          <CardHeader>{title}</CardHeader>
-        </Link>
-      </Card>
-    ),
-  );
+        <CardHeader>{title}</CardHeader>
+      </Link>
+    </Card>
+  ));
 
   return (
     <div className={styles.container}>
@@ -96,8 +93,8 @@ export default async function Page() {
       <header className={`${styles.header}`}>
         <h1>Home of Coin Catalog</h1>
         <p>
-          Coin catalog is filled with details about coins from America. Use the
-          links below to navitagte to the coins you want to view.
+          Coin catalog is filled with details about coins from America. Use the links below to
+          navitagte to the coins you want to view.
         </p>
       </header>
 

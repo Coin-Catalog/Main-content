@@ -1,6 +1,6 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
 import { NextRequest, NextResponse } from 'next/server';
@@ -14,9 +14,7 @@ async function getEntryData(id: string, cat: string) {
   const matterResult = matter(fileContents);
 
   // Combine the data with the id
-  const processedContent = await remark()
-    .use(html)
-    .process(matterResult.content);
+  const processedContent = await remark().use(html).process(matterResult.content);
   const contentHtml = processedContent.toString();
 
   // Combine the data with the id and contentHtml
@@ -27,17 +25,17 @@ async function getEntryData(id: string, cat: string) {
   };
 }
 
-export async function GET (req: NextRequest)  {
-  const url: URL = new URL(req.url)
-  const catagory = url.pathname.slice(11).split("/")[0];
-  const coin = url.pathname.slice(11).split("/")[1];
+export async function GET(req: NextRequest) {
+  const url: URL = new URL(req.url);
+  const catagory = url.pathname.slice(11).split('/')[0];
+  const coin = url.pathname.slice(11).split('/')[1];
 
   const coinData = await getEntryData(coin, catagory);
 
   return NextResponse.json(
     JSON.stringify({
-      'data': coinData
+      data: coinData,
     }),
-    {status: 200}
-  )
+    { status: 200 },
+  );
 }

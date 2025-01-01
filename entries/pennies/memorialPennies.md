@@ -1,7 +1,7 @@
 ---
 title: 'Memorial cent'
-codeTitle: "memorialPennies"
-id: "4"
+codeTitle: 'memorialPennies'
+id: '4'
 obverse: /coin/pennies/SC/PNGs/memorialPenniesObverse.png
 reverse: /coin/pennies/SC/PNGs/memorialPenniesReverse.png
 full: /coin/pennies/SC/PNGs/memorialPennies.png
@@ -9,7 +9,8 @@ datesMinted: '1959-2008'
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 142,153,900,448
 Designer: 'Obverse Victor D. Brenner, Reverse: Frank Gasparro'
-related: [[pennies,shieldPennies],[pennies,pennies2009],[pennies,wheatPennies],[pennies,indianHead]]
+related:
+  [[pennies, shieldPennies], [pennies, pennies2009], [pennies, wheatPennies], [pennies, indianHead]]
 cat: pennies
 ---
 
