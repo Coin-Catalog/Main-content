@@ -72,15 +72,9 @@ export default async function Page({
                 <div className={styles.profile}>
 
                 <picture className={styles.image}>
-                <source src={entryData.obverse} className={styles.image} />
+                    <source src={entryData.full} className={styles.image} />
 
-                <img src={entryData.obverse} className={styles.image} alt={`Obverse of a ${entryData.title}`} />
-                </picture>
-
-                <picture className={styles.image}>
-                <source src={entryData.reverse} className={styles.image} />
-
-                <img src={entryData.reverse} className={styles.image} alt={`Reverse of a ${entryData.title}`} />
+                    <img src={entryData.full} className={styles.image} alt={`Obverse and reverse of a ${entryData.title}`} />
                 </picture>
 
                 <p>
