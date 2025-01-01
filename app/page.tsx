@@ -60,9 +60,8 @@ export default async function Page() {
             gridRow: `${Math.floor(index / 3) + 1} / span 1`,
           }}
         >
-
           <CardBody>
-            <Image 
+            <Image
               alt={`Image of the reverse of a ${title} as well as the obverse of a ${title}`}
               className={`${styles.profile_img}`}
               src={full}
