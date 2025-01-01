@@ -1,5 +1,7 @@
 .footerContainer {
     text-align: center;
+
+    max-width: calc(100vw - 10px);
 }
 
 .footer {

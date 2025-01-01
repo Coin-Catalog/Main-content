@@ -55,7 +55,7 @@ export default async function Page({
     }
 
     return (
-        <>
+        <div className={`${styles.container}`}>
             <Head>
                 <title>{entryData.title} | US Coin Catalog</title>
 
@@ -107,6 +107,6 @@ export default async function Page({
             <br />
             
             <RelatedCoins relatedCoins={entryData["related"]} />
-        </>
+        </div>
     )
 }

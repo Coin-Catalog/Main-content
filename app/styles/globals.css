@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 :root {
-    width: 100vw;
+    width: 97.5vw;
+
+    margin: 0;
+    padding: 0;
+
     text-align: center;
 }
 
