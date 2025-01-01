@@ -1,7 +1,17 @@
+.container {
+  width: 100vw;
+}
+
+.header {
+  width: fit-content;
+  margin: 0 auto;
+}
+
 .home_coins {
   width: 90vw;
-  
-  margin-right: 10vw;
+
+  margin-left: 5vw;
+  margin-right: 5vw;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -20,16 +30,11 @@
 }
 
 .home_coin {
-  width: fit-content
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .profile_img {
   max-width: 200px;
   max-height: 200px;
-}
-
-
-.section_link {
-  text-decoration: none;
-  color: black;
 }

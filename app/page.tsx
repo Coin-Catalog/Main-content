@@ -76,7 +76,7 @@ export default async function Page() {
   );
 
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>Home</title>
 
@@ -93,13 +93,15 @@ export default async function Page() {
         />
       </Head>
 
-      <header>
+      <header className={`${styles.header}`}>
         <h1>Home of Coin Catalog</h1>
         <p>
           Coin catalog is filled with details about coins from America. Use the
           links below to navitagte to the coins you want to view.
         </p>
       </header>
+
+      <br />
 
       <div className={`${styles.home_coins}`}>{entryJSX}</div>
     </div>

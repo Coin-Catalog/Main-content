@@ -5,7 +5,6 @@
 .footer {
     display: inline-block;
     text-decoration: none;
-    color: black;
 }
 
 .footer:after {
@@ -27,3 +26,9 @@
     width: fit-content;
     margin: 0 auto;
 }
+
+@media (prefers-color-scheme: dark) {
+    .footer::after {
+        background: white;
+    }
+}  
