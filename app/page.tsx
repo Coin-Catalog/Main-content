@@ -2,6 +2,9 @@ import Head from "next/head";
 import Link from "next/link";
 import { headers } from "next/headers";
 
+import { Card, CardHeader, CardBody } from "@nextui-org/card";
+import { Image } from "@nextui-org/image";
+
 import styles from "./styles/home.module.css";
 
 export default async function Page() {
@@ -45,7 +48,7 @@ export default async function Page() {
 
   const entryJSX = entries.map(
     ({ title, codeTitle, full, id, cat }: Coin, index: number) => (
-      <span
+      <Card
         key={id}
         className={`${styles.home_coin} ${Number(id) % 3 == 0 ? "column-1" : Number(id) % 2 ? "column-2" : "column3"}`}
       >
@@ -57,19 +60,18 @@ export default async function Page() {
             gridRow: `${Math.floor(index / 3) + 1} / span 1`,
           }}
         >
-          <picture className={`${styles.profile_img}`}>
-            <source className={`${styles.profile_img}`} src={full} />
 
-            <img
+          <CardBody>
+            <Image 
               alt={`Image of the reverse of a ${title} as well as the obverse of a ${title}`}
               className={`${styles.profile_img}`}
               src={full}
             />
-          </picture>
+          </CardBody>
 
-          <p>{title}</p>
+          <CardHeader>{title}</CardHeader>
         </Link>
-      </span>
+      </Card>
     ),
   );
 

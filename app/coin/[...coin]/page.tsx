@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { headers } from 'next/headers';
 
+import { Card, CardHeader, CardBody } from "@nextui-org/card";
+import { Image } from "@nextui-org/image";
+
 import RelatedCoins from '@/app/components/relatedCoins';
 
 import styles from './styles/entry.module.css';
@@ -72,28 +75,33 @@ export default async function Page({
             <h1>{entryData.title}</h1>
 
             <div className={styles.coin_profile}>
-                <div className={styles.profile}>
+                <Card className={styles.profile}>
+                    <CardHeader>
+                        <Image 
+                            className={styles.image}
+                            src={entryData.full}
+                            alt={`Obverse and reverse of a ${entryData.title}`}
+                        />
+                    </CardHeader>
 
-                <picture className={styles.image}>
-                    <source src={entryData.full} className={styles.image} />
+                    <CardBody>
+                        <p>
+                        Dates minted: {entryData.datesMinted}
+                        <br />
+                        Mints: {entryData.Mints.join(", ")}
+                        <br />
+                        Total minted: {entryData.mintage}
+                        <br />
+                        Designer: {entryData.Designer}
+                        </p>
+                    </CardBody>
+                </Card>
 
-                    <img src={entryData.full} className={styles.image} alt={`Obverse and reverse of a ${entryData.title}`} />
-                </picture>
-
-                <p>
-                Dates minted: {entryData.datesMinted}
-                <br />
-                Mints: {entryData.Mints.join(", ")}
-                <br />
-                total minted: {entryData.mintage}
-                <br />
-                Designer: {entryData.Designer}
-                </p>
-                </div>
-
-                <div className={styles.secondary_part}>
-                <div dangerouslySetInnerHTML={{ __html: entryData.contentHtml }} />
-                </div>
+                <Card className={styles.secondary_part}>
+                    <CardBody>
+                        <div dangerouslySetInnerHTML={{ __html: entryData.contentHtml }} />
+                    </CardBody>
+                </Card>
             </div>
 
             <br />

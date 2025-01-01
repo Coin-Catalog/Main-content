@@ -1,14 +1,11 @@
 .related {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
     gap: 5px;
-    --Related-size: calc(24% - 20px);
-    grid-template-columns: repeat(4, var(--Related-size));
-    width: 90%;
 }
 
 .item {
-    border: 1px solid black;
     padding: 5px;
 }
 

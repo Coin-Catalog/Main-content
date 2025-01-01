@@ -1,7 +1,10 @@
-import Link from 'next/link'
-import styles from '../styles/relatedCoins.module.css'
-
+import Link from 'next/link';
 import { headers } from 'next/headers';
+
+import { Card, CardHeader, CardBody } from "@nextui-org/card";
+import { Image } from "@nextui-org/image";
+
+import styles from '../styles/relatedCoins.module.css'
 
 export default async function RelatedCoins({ relatedCoins }: any) {
   const headerList = headers();
@@ -71,53 +74,61 @@ export default async function RelatedCoins({ relatedCoins }: any) {
 
   return (
     <section className={styles.related}>
-      <section className={`${styles.item_1} ${styles.item}`}>
+      <Card className={`${styles.item_1} ${styles.item}`}>
         <Link href={`/coin/${relatedCoins[0][0]}/${relatedCoins[0][1]}`} className="no_deceration">
-          <picture className={`${styles.image}`}>
-            <source src={coinData["one"]["imageURL"]} className={`${styles.image}`} />
-      
-            <img src={coinData["one"]["imageURL"]} alt={`Image of the ${relatedCoins[0]}`} className={`${styles.image}`} />
-          </picture>
+          <Image 
+            className={`${styles.image}`}
+            src={coinData["one"]["imageURL"]}
+            alt={`Image of the ${relatedCoins[0]}`}
+          />
     
-          <p>{`${coinData["one"]["name"]} (${coinData["one"]["years"]})`}</p>
+          <CardHeader>
+            <p>{`${coinData["one"]["name"]} (${coinData["one"]["years"]})`}</p>
+          </CardHeader>
         </Link>
-      </section>
+      </Card>
 
-      <section className={`${styles.item_2} ${styles.item}`}>
+      <Card className={`${styles.item_2} ${styles.item}`}>
         <Link href={`/coin/${relatedCoins[1][0]}/${relatedCoins[1][1]}`} className="no_deceration">
-          <picture className={`${styles.image}`}>
-            <source src={coinData["two"]["imageURL"]} className={`${styles.image}`} />
-      
-            <img src={coinData["two"]["imageURL"]} alt={`Image of the ${relatedCoins[1]}`} className={`${styles.image}`} />
-          </picture>
+          <Image 
+            className={`${styles.image}`}
+            src={coinData["two"]["imageURL"]}
+            alt={`Image of the ${relatedCoins[1]}`}
+          />
     
-          <p>{`${coinData["two"]["name"]} (${coinData["two"]["years"]})`}</p>
+          <CardHeader>
+            <p>{`${coinData["two"]["name"]} (${coinData["two"]["years"]})`}</p>
+          </CardHeader>
         </Link>
-      </section>
+      </Card>
 
-      <section className={`${styles.item_3} ${styles.item}`}>
+      <Card className={`${styles.item_3} ${styles.item}`}>
         <Link href={`/coin/${relatedCoins[2][0]}/${relatedCoins[2][1]}`} className="no_deceration">
-          <picture className={`${styles.image}`}>
-            <source src={coinData["three"]["imageURL"]} className={`${styles.image}`} />
-      
-            <img src={coinData["three"]["imageURL"]} alt={`Image of the ${relatedCoins[2]}`} className={`${styles.image}`} />
-          </picture>
-    
-          <p>{`${coinData["three"]["name"]} (${coinData["three"]["years"]})`}</p>
-        </Link>
-      </section>
+          <Image 
+            className={`${styles.image}`}
+            src={coinData["three"]["imageURL"]}
+            alt={`Image of the ${relatedCoins[2]}`}
+          />
 
-      <section className={`${styles.item_4} ${styles.item}`}>
-        <Link href={`/coin/${relatedCoins[3][0]}/${relatedCoins[3][1]}`} className="no_deceration">
-          <picture className={`${styles.image}`}>
-            <source src={coinData["four"]["imageURL"]} className={`${styles.image}`} />
-      
-            <img src={coinData["four"]["imageURL"]} alt={`Image of the ${relatedCoins[3]}`} className={`${styles.image}`} />
-          </picture>
-    
-          <p>{`${coinData["four"]["name"]} (${coinData["four"]["years"]})`}</p>
+          <CardHeader>
+            <p>{`${coinData["three"]["name"]} (${coinData["three"]["years"]})`}</p>
+          </CardHeader>
         </Link>
-      </section>
+      </Card>
+
+      <Card className={`${styles.item_4} ${styles.item}`}>
+        <Link href={`/coin/${relatedCoins[3][0]}/${relatedCoins[3][1]}`} className="no_deceration">
+          <Image 
+            className={`${styles.image}`}
+            src={coinData["four"]["imageURL"]}
+            alt={`Image of the ${relatedCoins[3]}`}
+          />
+    
+          <CardHeader>
+            <p>{`${coinData["four"]["name"]} (${coinData["four"]["years"]})`}</p>
+          </CardHeader>
+        </Link>
+      </Card>
     </section>
   )
 }
