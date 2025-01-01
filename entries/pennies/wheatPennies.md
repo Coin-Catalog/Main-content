@@ -9,7 +9,7 @@ datesMinted: '1909-1958'
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 27,339,255,007
 Designer: 'Victor David Brenner'
-related: [shieldPennies,memorialPennies,pennies2009,indianHead]
+related: [[pennies,shieldPennies],[pennies,memorialPennies],[pennies,pennies2009],[pennies,indianHead]]
 cat: pennies
 ---
 

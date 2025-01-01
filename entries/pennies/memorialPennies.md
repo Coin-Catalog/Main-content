@@ -9,7 +9,7 @@ datesMinted: '1959-2008'
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 142,153,900,448
 Designer: 'Obverse Victor D. Brenner, Reverse: Frank Gasparro'
-related: [shieldPennies,pennies2009,wheatPennies,indianHead]
+related: [[pennies,shieldPennies],[pennies,pennies2009],[pennies,wheatPennies],[pennies,indianHead]]
 cat: pennies
 ---
 

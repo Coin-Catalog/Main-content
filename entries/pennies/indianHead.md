@@ -9,7 +9,7 @@ datesMinted: '1859-1909'
 Mints: [Philadelphia, San Francisco]
 mintage: 1,906,352,400
 Designer: 'James B. Longacre'
-related: [shieldPennies,memorialPennies,wheatPennies,flyingEagle]
+related: [[pennies,shieldPennies],[pennies,memorialPennies],[pennies,wheatPennies],[pennies,flyingEagle]]
 cat: pennies
 ---
 

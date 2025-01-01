@@ -2,14 +2,14 @@
 title: '2009 pennies'
 codeTitle: "pennies2009"
 id: "5"
-obverse: /coin/pennies/SC/PNGs/pennies2009Obverse.png
-reverse: /coin/pennies/SC/PNGs/pennies2009Reverse.png
+obverse: /coin/pennies/SC/PNGs/pennies2009.png
+reverse: /coin/pennies/SC/PNGs/pennies2009.png
 full: /coin/pennies/SC/PNGs/pennies2009.png
 datesMinted: '2009'
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 5,525,859,372
 Designer: "Obverse Victor D. Brenner, Birth and Early childhood was designed by: Richard Masters, Formative Years was deigned by Charles Vickers, Professional Life was designed by Don Everhart, Presidency was designed by Joseph Menna"
-related: [shieldPennies,memorialPennies,wheatPennies,indianHead]
+related: [[pennies,shieldPennies],[pennies,memorialPennies],[pennies,wheatPennies],[pennies,indianHead]]
 cat: pennies
 ---
 

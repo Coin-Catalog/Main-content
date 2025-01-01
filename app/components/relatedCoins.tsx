@@ -72,7 +72,7 @@ export default async function RelatedCoins({ relatedCoins }: any) {
   return (
     <section className={styles.related}>
       <section className={`${styles.item_1} ${styles.item}`}>
-        <Link href={`/entries/${relatedCoins[0]}`} target="_blank" className="no_deceration">
+        <Link href={`/coin/${relatedCoins[0][0]}/${relatedCoins[0][1]}`} className="no_deceration">
           <picture className={`${styles.image}`}>
             <source src={coinData["one"]["imageURL"]} className={`${styles.image}`} />
       
@@ -84,7 +84,7 @@ export default async function RelatedCoins({ relatedCoins }: any) {
       </section>
 
       <section className={`${styles.item_2} ${styles.item}`}>
-        <Link href={`/entries/${relatedCoins[1]}`} target="_blank" className="no_deceration">
+        <Link href={`/coin/${relatedCoins[1][0]}/${relatedCoins[1][1]}`} className="no_deceration">
           <picture className={`${styles.image}`}>
             <source src={coinData["two"]["imageURL"]} className={`${styles.image}`} />
       
@@ -96,7 +96,7 @@ export default async function RelatedCoins({ relatedCoins }: any) {
       </section>
 
       <section className={`${styles.item_3} ${styles.item}`}>
-        <Link href={`/entries/${relatedCoins[2]}`} target="_blank" className="no_deceration">
+        <Link href={`/coin/${relatedCoins[2][0]}/${relatedCoins[2][1]}`} className="no_deceration">
           <picture className={`${styles.image}`}>
             <source src={coinData["three"]["imageURL"]} className={`${styles.image}`} />
       
@@ -108,7 +108,7 @@ export default async function RelatedCoins({ relatedCoins }: any) {
       </section>
 
       <section className={`${styles.item_4} ${styles.item}`}>
-        <Link href={`/entries/${relatedCoins[3]}`} target="_blank" className="no_deceration">
+        <Link href={`/coin/${relatedCoins[3][0]}/${relatedCoins[3][1]}`} className="no_deceration">
           <picture className={`${styles.image}`}>
             <source src={coinData["four"]["imageURL"]} className={`${styles.image}`} />
       
