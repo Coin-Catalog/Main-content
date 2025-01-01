@@ -10,6 +10,7 @@ Mints: [Philadelphia, Denver, San Francisco]
 mintage: 5,525,859,372
 Designer: "Obverse Victor D. Brenner, Birth and Early childhood was designed by: Richard Masters, Formative Years was deigned by Charles Vickers, Professional Life was designed by Don Everhart, Presidency was designed by Joseph Menna"
 related: [shieldPennies,memorialPennies,wheatPennies,indianHead]
+cat: pennies
 ---
 
 ## Description

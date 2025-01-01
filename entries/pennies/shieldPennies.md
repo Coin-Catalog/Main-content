@@ -10,6 +10,7 @@ Mints: [Philadelphia, Denver, San Francisco]
 mintage: 87,662,371,984+
 Designer: 'Obverse Victor D. Brenner, reverse: Lyndall Bass'
 related: [pennies2009,memorialPennies,wheatPennies,indianHead]
+cat: pennies
 ---
 
 ## Description

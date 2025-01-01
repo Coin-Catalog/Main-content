@@ -42,17 +42,18 @@ export default async function Page() {
     codeTitle: string;
     full: string;
     id: string;
+    cat: string;
   }
 
   const entryJSX = entries.map(
-    ({ title, codeTitle, full, id }: Coin, index: number) => (
+    ({ title, codeTitle, full, id, cat }: Coin, index: number) => (
       <span
         key={id}
         className={`${styles.home_coin} ${Number(id) % 3 == 0 ? "column-1" : Number(id) % 2 ? "column-2" : "column3"}`}
       >
         <Link
           className={`${styles.home_coin} no_deceration`}
-          href={`/entries/${codeTitle}`}
+          href={`/coin/${cat}/${codeTitle}`}
           style={{
             gridColumn: `${(index % 3) + 1} / span 1`,
             gridRow: `${Math.floor(index / 3) + 1} / span 1`,

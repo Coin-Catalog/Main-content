@@ -10,6 +10,7 @@ Mints: [Philadelphia, San Francisco]
 mintage: 1,906,352,400
 Designer: 'James B. Longacre'
 related: [shieldPennies,memorialPennies,wheatPennies,flyingEagle]
+cat: pennies
 ---
 
 ## Description

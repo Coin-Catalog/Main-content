@@ -10,6 +10,7 @@ Mints: [Philadelphia]
 mintage: 42,052,000
 Designer: James B. Longacre
 related: [shieldPennies,memorialPennies,wheatPennies,indianHead]
+cat: pennies
 ---
 
 ## Description

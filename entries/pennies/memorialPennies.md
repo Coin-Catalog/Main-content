@@ -10,6 +10,7 @@ Mints: [Philadelphia, Denver, San Francisco]
 mintage: 142,153,900,448
 Designer: 'Obverse Victor D. Brenner, Reverse: Frank Gasparro'
 related: [shieldPennies,pennies2009,wheatPennies,indianHead]
+cat: pennies
 ---
 
 ## Description
