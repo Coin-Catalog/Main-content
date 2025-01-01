@@ -1,23 +1,9 @@
-import fs, { stat } from 'fs'
+import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { remark } from 'remark';
 import html from 'remark-html';
 import { NextRequest, NextResponse } from 'next/server';
-
-function getAllEntryIds(cat: string) {
-  const postsDirectory = path.join(process.cwd(), `entries/${cat}`);
-
-  const fileNames = fs.readdirSync(postsDirectory);
-
-  return fileNames.map((fileName) => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, ''),
-      },
-    };
-  });
-}
 
 async function getEntryData(id: string, cat: string) {
   const postsDirectory = path.join(process.cwd(), `entries/${cat}`);

@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { headers } from 'next/headers';
 
-//import RelatedCoins  from '../../lib/components/relatedCoins'
+import RelatedCoins from '@/app/components/relatedCoins';
 
 import styles from './styles/entry.module.css'
 
@@ -101,7 +101,7 @@ export default async function Page({
 
             <br />
             
-            {/*<RelatedCoins relatedCoins={entryData["related"]} />*/}
+            <RelatedCoins relatedCoins={entryData["related"]} />
         </>
     )
 }

@@ -9,7 +9,7 @@ datesMinted: 1856-1858
 Mints: [Philadelphia]
 mintage: 42,052,000
 Designer: James B. Longacre
-related: [shieldPennies,memorialPennies,wheatPennies,indianHead]
+related: [[pennies,shieldPennies],[pennies,memorialPennies],[pennies,wheatPennies],[pennies,indianHead]]
 cat: pennies
 ---
 
