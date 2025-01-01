@@ -4,7 +4,7 @@ import { headers } from 'next/headers';
 
 import RelatedCoins from '@/app/components/relatedCoins';
 
-import styles from './styles/entry.module.css'
+import styles from './styles/entry.module.css';
 
 interface EntryDataInterface {
   "Designer": string,
@@ -63,7 +63,10 @@ export default async function Page({
             </Head>
 
             <nav className='no_deceration'>
-                <p className='no_deceration noPadding'><Link href="/" className='no_deceration noPadding'>Home</Link> / <Link href={`/coin/${catagory}/${coin}`} className='no_deceration noPadding'>{coin}</Link></p>
+                <p className='no_deceration noPadding'>
+                    <Link href="/" className='no_deceration noPadding'>Home</Link> /&nbsp;
+                    <Link href={`/coin/${catagory}/${coin}`} className='no_deceration noPadding'>{coin}</Link>
+                </p>
             </nav>
 
             <h1>{entryData.title}</h1>
