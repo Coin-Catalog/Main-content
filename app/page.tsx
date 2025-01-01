@@ -2,8 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 import { headers } from "next/headers";
 
-//import Footer from '../components/footer.jsx'
-
 import styles from "./styles/home.module.css";
 
 export default async function Page() {
@@ -102,12 +100,6 @@ export default async function Page() {
       </header>
 
       <div className={`${styles.home_coins}`}>{entryJSX}</div>
-
-      <br />
-      <hr />
-      <br />
-
-      {/*<Footer />*/}
     </div>
   );
 }
