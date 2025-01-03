@@ -70,7 +70,9 @@ export default async function Page({ params }: { params: Promise<{ coin: string 
         <link href={`${protocal}${domainName}/coin/${catagory}/${coin}`} rel="canonical" />
       </Head>
 
-      <nav className="no_deceration">
+      <h1>{entryData.title}</h1>
+
+      <nav className={`no_deceration ${styles.breadCrumbs}`}>
         <p className="no_deceration noPadding">
           <Link className="no_deceration noPadding" href="/">
             Home
@@ -81,8 +83,6 @@ export default async function Page({ params }: { params: Promise<{ coin: string 
           </Link>
         </p>
       </nav>
-
-      <h1>{entryData.title}</h1>
 
       <div className={styles.coin_profile}>
         <Card className={styles.profile}>

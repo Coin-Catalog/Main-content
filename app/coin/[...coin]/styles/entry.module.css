@@ -23,3 +23,7 @@
 .image {
   max-width: 70%;
 }
+
+.breadCrumbs {
+  text-align: left;
+}
