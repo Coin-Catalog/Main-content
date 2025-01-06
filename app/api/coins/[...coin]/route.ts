@@ -23,7 +23,7 @@ async function getEntryData(id: string, cat: string) {
     contentHtml,
     ...matterResult.data,
   };
-}
+};
 
 export async function GET(req: NextRequest) {
   const url: URL = new URL(req.url);
@@ -38,4 +38,4 @@ export async function GET(req: NextRequest) {
     }),
     { status: 200 },
   );
-}
+};

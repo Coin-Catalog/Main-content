@@ -19,7 +19,7 @@ export default async function Page() {
 
     if (response.status > 300 || response.status < 200) {
       // toast error
-    }
+    };
 
     const json = await response.json();
 
@@ -31,12 +31,12 @@ export default async function Page() {
 
     if (response.status > 300 || response.status < 200) {
       // toast error
-    }
+    };
 
     const json = await response.json();
 
     entries = JSON.parse(json)['entries'];
-  }
+  };
 
   interface Coin {
     title: string;
@@ -44,7 +44,7 @@ export default async function Page() {
     full: string;
     id: string;
     cat: string;
-  }
+  };
 
   const entryJSX = entries.map(({ title, codeTitle, full, id, cat }: Coin, index: number) => (
     <Card
@@ -103,4 +103,4 @@ export default async function Page() {
       <div className={`${styles.home_coins}`}>{entryJSX}</div>
     </div>
   );
-}
+};

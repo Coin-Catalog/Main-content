@@ -23,7 +23,7 @@ interface EntryDataInterface {
   codeTitle: string;
   full: string;
   entryData: any;
-}
+};
 
 export default async function Page({ params }: { params: Promise<{ coin: string }> }) {
   const headerList = headers();
@@ -119,4 +119,4 @@ export default async function Page({ params }: { params: Promise<{ coin: string 
       <RelatedCoins relatedCoins={entryData['related']} />
     </div>
   );
-}
+};

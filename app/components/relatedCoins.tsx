@@ -35,9 +35,7 @@ export default async function RelatedCoins({ relatedCoins }: any) {
   };
 
   try {
-    const response = await fetch(
-      `https://${domainName}/api/coins/${relatedCoins[0][0]}/${relatedCoins[0][1]}`,
-    );
+    const response = await fetch(`https://${domainName}/api/coins/${relatedCoins[0][0]}/${relatedCoins[0][1]}`);
     const json: any = await response.json();
 
     protocal = 'https://';
@@ -46,9 +44,7 @@ export default async function RelatedCoins({ relatedCoins }: any) {
     coinData.one.years = json['data']['datesMinted'];
     coinData.one.name = json['data']['title'];
   } catch (e) {
-    const response = await fetch(
-      `http://${domainName}/api/coins/${relatedCoins[0][0]}/${relatedCoins[0][1]}`,
-    );
+    const response = await fetch(`http://${domainName}/api/coins/${relatedCoins[0][0]}/${relatedCoins[0][1]}`);
     const json: any = JSON.parse(await response.json());
 
     coinData.one.imageURL = json['data']['full'];
@@ -58,27 +54,21 @@ export default async function RelatedCoins({ relatedCoins }: any) {
     protocal = 'http://';
   }
 
-  const second = await fetch(
-    `${protocal}${domainName}/api/coins/${relatedCoins[1][0]}/${relatedCoins[1][1]}`,
-  );
+  const second = await fetch(`${protocal}${domainName}/api/coins/${relatedCoins[1][0]}/${relatedCoins[1][1]}`);
   const secondJson = JSON.parse(await second.json());
 
   coinData.two.imageURL = secondJson['data']['full'];
   coinData.two.years = secondJson['data']['datesMinted'];
   coinData.two.name = secondJson['data']['title'];
 
-  const three = await fetch(
-    `${protocal}${domainName}/api/coins/${relatedCoins[2][0]}/${relatedCoins[2][1]}`,
-  );
+  const three = await fetch(`${protocal}${domainName}/api/coins/${relatedCoins[2][0]}/${relatedCoins[2][1]}`);
   const threeJson = JSON.parse(await three.json());
 
   coinData.three.imageURL = threeJson['data']['full'];
   coinData.three.years = threeJson['data']['datesMinted'];
   coinData.three.name = threeJson['data']['title'];
 
-  const four = await fetch(
-    `${protocal}${domainName}/api/coins/${relatedCoins[3][0]}/${relatedCoins[3][1]}`,
-  );
+  const four = await fetch(`${protocal}${domainName}/api/coins/${relatedCoins[3][0]}/${relatedCoins[3][1]}`);
   const fourJson = JSON.parse(await four.json());
 
   coinData.four.imageURL = fourJson['data']['full'];
@@ -144,4 +134,4 @@ export default async function RelatedCoins({ relatedCoins }: any) {
       </Card>
     </section>
   );
-}
+};

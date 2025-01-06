@@ -34,11 +34,11 @@ function getSortedEntriesData() {
 
     for (let j = 0; j < allPostsData.length; j++) {
       coins.push(allPostsData[j]);
-    }
-  }
+    };
+  };
 
   return coins;
-}
+};
 
 export async function GET() {
   return NextResponse.json(
@@ -47,4 +47,4 @@ export async function GET() {
     }),
     { status: 200 },
   );
-}
+};
