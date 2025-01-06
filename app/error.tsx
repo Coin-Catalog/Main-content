@@ -2,9 +2,9 @@
 
 import { useEffect } from 'react';
 
-import { blame } from "./blame";
+import { blame } from './blame';
 
-import styles from "./styles/error.module.css";
+import styles from './styles/error.module.css';
 
 export default function Error({ error, reset }: { error: Error; reset: () => void }) {
   useEffect(() => {
@@ -17,8 +17,8 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
     const person = e.target.id;
 
     blame(person);
-    
-    alert("Thanks for choosing who to blame.")
+
+    alert('Thanks for choosing who to blame.');
   }
 
   return (
@@ -29,8 +29,8 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
 
       <br />
 
-      <div id="ethan" onClick={blameFunc} className={`${styles.person}`}>
-        <img src='images/ethan-pfp.png' alt="Ethan's pfp" />
+      <div className={`${styles.person}`} id="ethan" onClick={blameFunc}>
+        <img alt="Ethan's pfp" src="images/ethan-pfp.png" />
 
         <p>Ethan</p>
       </div>
@@ -45,4 +45,4 @@ export default function Error({ error, reset }: { error: Error; reset: () => voi
       </button>
     </div>
   );
-};
+}
