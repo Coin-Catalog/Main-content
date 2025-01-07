@@ -2,9 +2,9 @@
 title: Jefferson nickel
 codeTitle: jefferson
 id: '10'
-obverse: 
-reverse: 
-full: 
+obverse: /next.svg
+reverse: /next.svg
+full: /next.svg
 datesMinted: 1938-2003
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 

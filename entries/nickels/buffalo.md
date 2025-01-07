@@ -2,9 +2,9 @@
 title: Buffalo nickel
 codeTitle: buffalo
 id: '9'
-obverse: 
-reverse: 
-full: 
+obverse: /next.svg
+reverse: /next.svg
+full: /next.svg
 datesMinted: 1913-1938
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 

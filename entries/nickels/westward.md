@@ -2,9 +2,9 @@
 title: Westward Journey nickel
 codeTitle: westward
 id: '11'
-obverse: 
-reverse: 
-full: 
+obverse: /next.svg
+reverse: /next.svg
+full: /next.svg
 datesMinted: 2004-2005
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 3,198,886,849

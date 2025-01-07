@@ -2,9 +2,9 @@
 title: Liberty Nickel
 codeTitle: libertyHead
 id: '8'
-obverse: 
-reverse: 
-full: 
+obverse: /next.svg
+reverse: /next.svg
+full: /next.svg
 datesMinted: 1883-1913
 Mints: [Philadelphia, Denver, San Francisco]
 mintage: 602,086,412
