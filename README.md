@@ -1,3 +1,6 @@
+> [!Important]
+New repo: https://github.com/Coin-Catalog/content
+
 # Coin-catalog
 
 ## Description
